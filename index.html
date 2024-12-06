@@ -14,7 +14,7 @@
 
         body {
             color: #fff;
-            background: url('https://files.catbox.moe/qucftl.jpg') no-repeat center center fixed;
+            background: url('https://imgur.com/a/nvMbSe9') no-repeat center center fixed;
             background-size: cover;
             display: flex;
             flex-direction: column;
@@ -218,7 +218,7 @@
     <div class="container">
         <!-- Shape 1: Input & Download Button -->
         <div class="shape input-section">
-            <h1>Team Tool-X Tik Tok Downloader No Watermark</h1>
+            <h1>Team Tool-X Tik Tok Downloader</h1>
             <input type="text" id="url" placeholder="Paste Your Link">
             <button onclick="downloadVideo()">Search</button>
         </div>
@@ -275,7 +275,7 @@
 
                     const videoData = response.data.data;
                     if (!videoData) {
-                        throw new Error("Data video tidak ditemukan.");
+                        throw new Error("Video data not found.");
                     }
 
                     const result = {
@@ -340,7 +340,7 @@
 
         function copyTextToClipboard(text) {
             navigator.clipboard.writeText(text).then(() => {
-                alert("Hashtags berhasil disalin!");
+                alert("Hashtags copied successfully!");
             });
         }
 
